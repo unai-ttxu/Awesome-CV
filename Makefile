@@ -7,7 +7,7 @@ CV_DIR = examples/cv
 RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
 CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
 
-examples: $(foreach x, coverletter cv cv-fashion resume, $x.pdf)
+examples: $(foreach x, coverletter cv cv-fash cv-com resume, $x.pdf)
 
 resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
@@ -15,7 +15,10 @@ resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
 cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
-cv-fashion.pdf: $(EXAMPLES_DIR)/cv-fashion.tex $(CV_SRCS)
+cv-fash.pdf: $(EXAMPLES_DIR)/cv-fash.tex $(CV_SRCS)
+	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+
+cv-com.pdf: $(EXAMPLES_DIR)/cv-com.tex $(CV_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
 coverletter.pdf: $(EXAMPLES_DIR)/coverletter.tex
