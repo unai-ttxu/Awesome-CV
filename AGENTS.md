@@ -14,7 +14,7 @@ This document provides context and instructions for AI agents assisting with the
 - **Source Files:** All content for Unai's resume is located in `examples/resume/unai/`.
 - **Content Alignment:** Keep the resume aligned with the latest [LinkedIn profile](https://www.linkedin.com/in/unaittxu).
 - **Style Guidelines:**
-    - **Experience:** Focus on high-level impact and SRE/Platform leadership. "Tech Stack" details should be moved to the Skills section rather than listed per role to maintain a clean appearance.
+    - **Experience:** Focus on high-level impact and SRE/Platform leadership. Include relevant "Tech Stack" details inline within the role descriptions to aid diagonal readers, ATS systems, and AI review tools.
     - **Skills:** Group skills into clear categories: `SRE`, `Platform`, `DevOps`, `Cloud`, `Observability`, `Programming`, and `Languages`. 
     - **Redundancy:** Avoid redundant terms like "Engineering" or repeating the category name within the skill items (e.g., "Site Reliability" under the "SRE" category).
 - **Formatting:** Use `\newpage` strategically to manage page breaks and ensure section titles remain with their content.
